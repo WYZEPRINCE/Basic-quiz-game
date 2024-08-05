@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <button class="reset-btn" onclick="resetGame()">Reset</button>
+        <div class="score" id="score">Score: 0</div>
+        <div class="question" id="question">Question text</div>
+        <ul class="options">
+          <li><button onclick="checkAnswer('A')">A: Option 1</button></li>
+          <li><button onclick="checkAnswer('B')">B: Option 2</button></li>
+          <li><button onclick="checkAnswer('C')">C: Option 3</button></li>
+          <li><button onclick="checkAnswer('D')">D: Option 4</button></li>
+        </ul>
+        <div class="result" id="result"></div>
+        <div class="end-game">
+          <button onclick="retryQuiz()">Retry</button>
+          <button onclick="continueQuiz()">Continue</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
